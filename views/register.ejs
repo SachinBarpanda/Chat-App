@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <form action="" method="POST">
+        <label for="name">Username : </label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+        
+        <label for="pass">Password : </label>
+        <input type="password" id="pass" name="pass">
+        
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <% if( typeof message !== 'undefined'){ %>
+        <div style="width: fit-content; background-color: green ; color: blanchedalmond; padding: 20px; margin-top: 40px; transition-duration: 2s;"  >Successfully registered </div>
+    <% } %>
+
+</body>
+</html>
+
